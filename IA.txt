@@ -13,3 +13,13 @@ además de aplicar un estilo diferenciado según la especie (un color/etiqueta d
 
 resultó útil para exhibir las mascotas en páginas y con presentaciones distintas para cada especie, 
 mostrando información ordenada.
+
+etapa 3:
+
+En ListaMascotas.jsx ubicada en componentes, debe aceptar el array de mascotas a través de props, 
+recorrer el array utilizando .map() y renderizar un MascotaCard para cada mascota, asignando adecuadamente la prop 
+key usando el id de cada elemento (no emplees el índice del array), y en app.jsx se debe renderizar ListaMascotas pasándole 
+los datos importados.
+
+Fue beneficioso para desarrollar el código de manera modular y escalable.
+

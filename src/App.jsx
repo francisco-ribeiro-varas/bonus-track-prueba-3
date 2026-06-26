@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { mascotas } from './data/mascotas'
-import MascotaCard from './components/MascotaCard'
+import ListaMascotas from './components/ListaMascotas'
 import './App.css'
 
 function App() {
@@ -15,19 +15,7 @@ function App() {
         <p>Elige una mascota y conoce sus datos antes de visitarla.</p>
       </section>
 
-      <section className="mascotas-grid">
-        {mascotas.map((mascota) => (
-          <MascotaCard
-            key={mascota.id}
-            nombre={mascota.nombre}
-            raza={mascota.raza}
-            edad={mascota.edad}
-            especie={mascota.especie}
-            descripcion={mascota.descripcion}
-            caracteristicas={mascota.caracteristicas}
-          />
-        ))}
-      </section>
+      <ListaMascotas mascotas={mascotas} />
 
       <button
         type="button"
