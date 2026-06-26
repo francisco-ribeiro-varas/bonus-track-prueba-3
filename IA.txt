@@ -40,3 +40,7 @@ la aplicación funcione sin errores ni advertencias en la consola.
 Resultó beneficioso para enfocar la atención del usuario: El diseño visual prominente (como el contorno) 
 orienta la mirada instantáneamente hacia las situaciones más críticas (adopcionUrgente: true) para que no se ignoren.
 
+modificacio diseño:
+ayudame a darle un mejor diseño a corde a la pagina sin modificar lo que ya esta
+
+fue util para darle un mejor diseño a la pagina
