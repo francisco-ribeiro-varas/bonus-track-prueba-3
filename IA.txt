@@ -2,3 +2,7 @@ tabla:
 me ayudas a hacer la tabla en analisis.md
 fue util para llenar la tabla con informacion 
 
+etapa 1:
+Asísteme en importar los arrays en app.jsx y revisa en la consola que se carga (console.log).
+fue util para mostrar los array en la consola
+
