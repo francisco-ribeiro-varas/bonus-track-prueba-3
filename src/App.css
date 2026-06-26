@@ -204,6 +204,41 @@
   color: var(--text-muted, #5c6370);
 }
 
+.filtro-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.filtro-control {
+  display: flex;
+  flex-direction: column;
+  min-width: 220px;
+  gap: 8px;
+}
+
+.filtro-control label {
+  font-weight: 700;
+}
+
+.filtro-control select,
+.filtro-control input {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  background: var(--input-bg, #fff);
+}
+
+.sin-resultados {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-muted, #5c6370);
+  margin: 32px 0;
+}
+
 .mascotas-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

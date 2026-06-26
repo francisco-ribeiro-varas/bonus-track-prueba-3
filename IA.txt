@@ -23,3 +23,11 @@ los datos importados.
 
 Fue beneficioso para desarrollar el código de manera modular y escalable.
 
+etrapa 4:
+
+en FiltoEspecie.jsx en la carpeta components incluye un selector para filtrar por especie: todas, perros, 
+gatos, otros, y en app.jsx utiliza usestate para almacenar el filtro seleccionado y un campo de búsqueda por nombre; 
+aplica ambos filtros sobre el array antes de enviarlo a ListaMascotas y emplea renderizado condicional para mostrar el 
+mensaje "no hay mascotas disponibles" cuando el resultado esté vacío.
+
+Resultó ser útil para integrar criterios de búsqueda avanzados.
