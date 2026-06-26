@@ -1,0 +1,4 @@
+tabla:
+me ayudas a hacer la tabla en analisis.md
+fue util para llenar la tabla con informacion 
+
