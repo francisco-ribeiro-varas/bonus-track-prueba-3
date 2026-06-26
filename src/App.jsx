@@ -21,6 +21,8 @@ function App() {
     return cumpleEspecie && cumpleBusqueda
   })
 
+  const urgentesCount = mascotasFiltradas.filter((mascota) => mascota.adopcionUrgente).length
+
   return (
     <main className="app-page">
       <section className="app-header">
@@ -34,6 +36,10 @@ function App() {
         busqueda={busqueda}
         onBusquedaChange={setBusqueda}
       />
+
+      <div className="urgente-contador">
+        <strong>{urgentesCount}</strong> mascota(s) en adopción urgente
+      </div>
 
       {mascotasFiltradas.length > 0 ? (
         <ListaMascotas mascotas={mascotasFiltradas} />

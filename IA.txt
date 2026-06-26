@@ -31,3 +31,12 @@ aplica ambos filtros sobre el array antes de enviarlo a ListaMascotas y emplea r
 mensaje "no hay mascotas disponibles" cuando el resultado esté vacío.
 
 Resultó ser útil para integrar criterios de búsqueda avanzados.
+
+etapa 5: 
+destaca de manera visual los elementos con adopcionUrgente: true (por ejemplo, un borde característico) y 
+añade un contador que indique cuántas mascotas requieren adopción urgente, además de asegurarte de que toda 
+la aplicación funcione sin errores ni advertencias en la consola.
+
+Resultó beneficioso para enfocar la atención del usuario: El diseño visual prominente (como el contorno) 
+orienta la mirada instantáneamente hacia las situaciones más críticas (adopcionUrgente: true) para que no se ignoren.
+

@@ -239,6 +239,18 @@
   margin: 32px 0;
 }
 
+.urgente-contador {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  color: #d00000;
+}
+
+.urgente-contador strong {
+  display: inline-block;
+  min-width: 26px;
+}
+
 .mascotas-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -273,6 +285,17 @@
   box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
   max-width: 420px;
   margin: 16px auto;
+}
+
+.mascota-card.urgente {
+  border-color: #ff595e;
+  box-shadow: 0 0 0 2px rgba(255, 89, 94, 0.18);
+}
+
+.mascota-card__urgente-text {
+  margin: 0 0 16px;
+  font-weight: 700;
+  color: #d00000;
 }
 
 .mascota-card__header {

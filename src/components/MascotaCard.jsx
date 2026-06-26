@@ -1,12 +1,14 @@
-function MascotaCard({ nombre, raza, edad, especie, descripcion, caracteristicas }) {
+function MascotaCard({ nombre, raza, edad, especie, descripcion, caracteristicas, adopcionUrgente }) {
   const especieClase = especie.toLowerCase() === 'perro'
     ? 'especie-perro'
     : especie.toLowerCase() === 'gato'
       ? 'especie-gato'
       : 'especie-otro'
 
+  const urgenteClase = adopcionUrgente ? ' urgente' : ''
+
   return (
-    <article className={`mascota-card ${especieClase}`}>
+    <article className={`mascota-card ${especieClase}${urgenteClase}`}>
       <header className="mascota-card__header">
         <div>
           <h2 className="mascota-card__nombre">{nombre}</h2>
@@ -14,6 +16,8 @@ function MascotaCard({ nombre, raza, edad, especie, descripcion, caracteristicas
         </div>
         <span className="mascota-card__badge">{especie}</span>
       </header>
+
+      {adopcionUrgente && <p className="mascota-card__urgente-text">Adopción urgente</p>}
 
       <p className="mascota-card__descripcion">{descripcion}</p>
 
