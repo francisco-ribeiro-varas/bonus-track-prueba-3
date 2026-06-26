@@ -6,3 +6,10 @@ etapa 1:
 Asísteme en importar los arrays en app.jsx y revisa en la consola que se carga (console.log).
 fue util para mostrar los array en la consola
 
+etapa 2:
+En MascotaCard.jsx ubicado en la carpeta components, el componente recibe por props: nombre, raza, 
+edad, especie, descripción, características, y debe presentar la información de manera visual y organizada, 
+además de aplicar un estilo diferenciado según la especie (un color/etiqueta diferente para perro, gato, u otro).
+
+resultó útil para exhibir las mascotas en páginas y con presentaciones distintas para cada especie, 
+mostrando información ordenada.

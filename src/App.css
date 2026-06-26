@@ -182,3 +182,140 @@
     border-right-color: var(--border);
   }
 }
+
+.app-page {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+}
+
+.app-header p {
+  margin: 0;
+  color: var(--text-muted, #5c6370);
+}
+
+.mascotas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  margin-bottom: 28px;
+}
+
+.counter {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+
+  &:hover {
+    border-color: var(--accent-border);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+.mascota-card {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px;
+  background: var(--card-bg, #fff);
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
+  max-width: 420px;
+  margin: 16px auto;
+}
+
+.mascota-card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.mascota-card__nombre {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.mascota-card__subtitulo {
+  margin: 6px 0 0;
+  color: var(--text-muted, #5c6370);
+  font-size: 0.95rem;
+}
+
+.mascota-card__badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.mascota-card__descripcion {
+  margin: 0 0 18px;
+  line-height: 1.6;
+}
+
+.mascota-card__caracteristicas h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+.mascota-card__caracteristicas ul {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 0;
+}
+
+.mascota-card__caracteristicas li {
+  margin-bottom: 6px;
+}
+
+.especie-perro {
+  border-color: #ffb4a2;
+  background-color: rgba(255, 180, 162, 0.12);
+}
+
+.especie-perro .mascota-card__badge {
+  background: #ff9a76;
+  color: #7f2d00;
+}
+
+.especie-gato {
+  border-color: #c0b3ff;
+  background-color: rgba(192, 179, 255, 0.12);
+}
+
+.especie-gato .mascota-card__badge {
+  background: #9f8dff;
+  color: #2d1f7f;
+}
+
+.especie-otro {
+  border-color: #7ed5c7;
+  background-color: rgba(126, 213, 199, 0.12);
+}
+
+.especie-otro .mascota-card__badge {
+  background: #57c1a8;
+  color: #084741;
+}
